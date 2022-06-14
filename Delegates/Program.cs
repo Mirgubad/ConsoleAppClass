@@ -57,7 +57,7 @@ namespace Delegates
 
                     WriteLine("Position qeyd edin");
                     employee.Position = ReadLine();
-                    if (employee.Position == null)
+                    if (string.IsNullOrWhiteSpace(employee.Position))
                     {
                         WriteLine("Employye position qeyd edilmeyib");
                         return;
